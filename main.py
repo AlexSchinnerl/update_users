@@ -26,28 +26,6 @@ def loader(akNR, url):
     
     return root
 
-
-# def modifier(akNR, root):
-#     # delete all roles
-#     roles = root.find("user_roles")
-#     root.remove(roles)
-
-#     print("roles removed")
-
-#     new_roles = ET.parse("user_Roles_2_change.xml")
-#     new_root = new_roles.getroot()
-#     root.append(new_root)
-
-#     print("user Roles applied")
-
-#     tree = ET.ElementTree(root)
-#     tree.write(f"outputFiles/output_{akNR}.xml")
-
-#     print("output written")
-
-#     return root
-
-
 def updater(akNR, root, key):
     headers = {
         "accept": "application/json",
@@ -75,15 +53,13 @@ def updater(akNR, root, key):
 
 def main():
     with open("input_akNumbers.txt", "r") as i:
-        inputfile = i.read()
-        akNumbers = re.findall("AK\d{6}", inputfile) # find AK Numbers in input file
+        usersInput = i.read()
+        akNumbers = re.findall("AK\d{6}", usersInput)
     
     with open("input_rolesProfiles.txt", "r") as i:
-        inputfile = i.read()
-        # akNumbers = re.findall("AK\d{6}", inputfile) # find AK Numbers in input file
-    roles_list = ["roles_circulationDesk_only"]
+        rolesInput = i.read()
+        roles_list = re.findall("roles_\w*", rolesInput)
 
-    # akNumbers = ["AK114820"]
     counter = 0
     for akNR in akNumbers:
         url, key = getAPIkey(akNR)
