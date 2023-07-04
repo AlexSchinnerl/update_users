@@ -2,6 +2,7 @@ import keyring
 import requests
 import xml.etree.ElementTree as ET
 import re
+from modifier import modify_roles
 
 def getAPIkey(akNR):
     # key = keyring.get_password("alma_api", "alx_prod").rstrip()
@@ -26,27 +27,25 @@ def loader(akNR, url):
     return root
 
 
-def modifier(akNR, root):
-    # delete all roles
-    roles = root.find("user_roles")
-    root.remove(roles)
+# def modifier(akNR, root):
+#     # delete all roles
+#     roles = root.find("user_roles")
+#     root.remove(roles)
 
-    print("roles removed")
+#     print("roles removed")
 
-    # new_user_roles = ET.Element("user_roles")
-    # root.append(new_user_roles)
-    new_roles = ET.parse("user_Roles_2_change.xml")
-    new_root = new_roles.getroot()
-    root.append(new_root)
+#     new_roles = ET.parse("user_Roles_2_change.xml")
+#     new_root = new_roles.getroot()
+#     root.append(new_root)
 
-    print("user Roles applied")
+#     print("user Roles applied")
 
-    tree = ET.ElementTree(root)
-    tree.write(f"outputFiles/output_{akNR}.xml")
+#     tree = ET.ElementTree(root)
+#     tree.write(f"outputFiles/output_{akNR}.xml")
 
-    print("output written")
+#     print("output written")
 
-    return root
+#     return root
 
 
 def updater(akNR, root, key):
@@ -75,16 +74,21 @@ def updater(akNR, root, key):
 
 
 def main():
-    with open("input.txt", "r") as i:
+    with open("input_akNumbers.txt", "r") as i:
         inputfile = i.read()
         akNumbers = re.findall("AK\d{6}", inputfile) # find AK Numbers in input file
+    
+    with open("input_rolesProfiles.txt", "r") as i:
+        inputfile = i.read()
+        # akNumbers = re.findall("AK\d{6}", inputfile) # find AK Numbers in input file
+    roles_list = ["roles_circulationDesk_only"]
 
     # akNumbers = ["AK114820"]
     counter = 0
     for akNR in akNumbers:
         url, key = getAPIkey(akNR)
         base_root = loader(akNR, url)
-        modified_root = modifier(akNR, base_root)
+        modified_root = modify_roles(akNR, base_root, roles_list)
 
         updater(akNR, modified_root, key)
         
