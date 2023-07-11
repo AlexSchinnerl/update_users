@@ -22,8 +22,6 @@ def modify_roles(akNR, root, roles_list):
 
     print("roles removed")
 
-    # new_roles = ET.parse("user_Roles_2_change.xml")
-    # new_root = new_roles.getroot()
     role_profile = build_role_profile(roles_list)
     root.append(role_profile)
 

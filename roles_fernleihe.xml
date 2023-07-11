@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user_roles>
+    <user_role>
+            <status desc="Active">ACTIVE</status>
+            <scope desc="Resource Sharing Library">RES_SHARE</scope>
+            <role_type desc="Requests Operator">51</role_type>
+            <parameters>
+                <parameter>
+                    <type>CirculationDesk</type>
+                    <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                    <value desc="Resource Sharing Desk">RES_DESK</value>
+                </parameter>
+            </parameters>
+        </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Fulfillment Services Operator">38</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Fulfillment Services Manager">215</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Resource Sharing Partners Manager">239</role_type>
+        <parameters/>
+    </user_role>
+</user_roles>
