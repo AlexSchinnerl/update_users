@@ -1,6 +1,8 @@
 outputFiles/*
 saveFiles/*
 
+input_akNumbers.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

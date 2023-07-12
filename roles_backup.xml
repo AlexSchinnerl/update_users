@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user_roles>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="CDI Inventory Operator">208</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Leihstelle FH">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Internationales Management">BWL_CIRC_14</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Produktions- und Logistikmanagement">BWL_CIRC_05</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Strategisches Management">BWL_CIRC_16</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Geschichte">KGES</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Geschichte">KGES</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Geschichte">KGES</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+                <value desc="Default Circulation Desk">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Geschichte">KGES</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Geschichte">KGES</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Inactive">INACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Collection Inventory Operator">228</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Inactive">INACTIVE</status>
+        <scope/>
+        <role_type desc="Collection Inventory Operator Extended">229</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Fulfillment Services Manager">215</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Trial Manager">217</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="User Manager">21</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Resource Sharing Partners Manager">239</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Work Order Operator">214</role_type>
+        <parameters>
+            <parameter>
+                <type>ServiceUnit</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API Infra Read">238</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Chat with Support">450</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Designs Analytics">220</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Discovery - Admin">300</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API User Information Write">234</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Purchase Request Operator Extended">248</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Fiscal Period Manager">45</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="License Manager">41</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Library Juridicum">KREWI</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Library Juridicum">KREWI</scope>
+                <value desc="Infoschalter">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="Library Juridicum">KREWI</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API Analytics Read">372</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Work Order Operator">214</role_type>
+        <parameters>
+            <parameter>
+                <type>ServiceUnit</type>
+                <value desc="Buchbinder">BBD</value>
+            </parameter>
+            <parameter>
+                <type>ServiceUnit</type>
+                <value desc="Digitization Department">DIGI_DEPT_INST</value>
+            </parameter>
+            <parameter>
+                <type>ServiceUnit</type>
+                <value desc="Sacherschließung">SED</value>
+            </parameter>
+            <parameter>
+                <type>ServiceUnit</type>
+                <value desc="Schlussstelle">SSD</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Fulfillment Services Manager">215</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API Label Printing Read">232</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Resource Sharing Partners Manager">239</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Printout Queue Operator">427</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Usage Data Operator">244</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="User Administrator">50</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Main Library">KHB</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="HB Fernleihe (ohne locations)">HB_FL</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Electronic Inventory Operator Extended">224</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Electronic Inventory Operator">209</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API Fulfillment Read">223</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Inactive">INACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="License Viewer">58</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Fulfillment Services Operator">38</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API User Information Read">233</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Acquisitions Administrator">56</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Mechatronik">KMECH</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value desc="Hochfrequenzsysteme">HF_CIRC</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Medizin">KMED</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Medizin">KMED</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Medizin">KMED</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Soziologie">KSOZ</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Soziologie">KSOZ</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Mathematik">KMATH</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mathematik">KMATH</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Mathematik">KMATH</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Library Level Analytics consumer">373</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+        <role_type desc="Receiving Operator">37</role_type>
+        <parameters>
+            <parameter>
+                <type>ServiceUnit</type>
+                <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK-AcqWorkOrder</value>
+            </parameter>
+            <parameter>
+                <type>ServiceUnit</type>
+                <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+                <value desc="Erwerbungsabteilung">AcqDeptKCHEM</value>
+            </parameter>
+            <parameter>
+                <type>ServiceUnit</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Erwerbungsabteilung">AcqDeptKHB</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Informatik">KINFO</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value desc="Pervasive Computing">INFO2_CIRC</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Mathematik">KMATH</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mathematik">KMATH</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Printout Queue Manager">428</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Fund Manager">36</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Vendor Account Manager">250</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Cataloger">204</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Analytics Administrator">2200</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Inactive">INACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API Fulfillment Write">236</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Internationales Management">BWL_CIRC_14</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Leihstelle FH">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Produktions- und Logistikmanagement">BWL_CIRC_05</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Strategisches Management">BWL_CIRC_16</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Sonderbibliothek">KSOND</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Sonderbibliothek">KSOND</scope>
+                <value desc="Quality Design">IQD_CIRC</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+                <value desc="Default Circulation Desk">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Sonderbibliothek">KSOND</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Sonderbibliothek">KSOND</scope>
+                <value desc="Quality Design">IQD_CIRC</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="Sonderbibliothek">KSOND</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Repository Administrator">53</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Main Library">KHB</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="HB Fernleihe (ohne locations)">HB_FL</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Recommendation manager">429</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Informatik">KINFO</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value desc="Pervasive Computing">INFO2_CIRC</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Philosophie">KPHIL</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Philosophie">KPHIL</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Philosophie">KPHIL</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Mechatronik">KMECH</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value desc="Hochfrequenzsysteme">HF_CIRC</value>
+            </parameter>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Inactive">INACTIVE</status>
+        <scope/>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Inactive">INACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Physical Inventory Operator">210</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Letter Administrator">57</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Trial Operator">216</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Resource Sharing Partners Manager">239</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Ledger Manager">34</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Library Juridicum">KREWI</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Library Juridicum">KREWI</scope>
+                <value desc="Infoschalter">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Catalog Manager">206</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Purchasing Manager">55</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Fulfillment Administrator">52</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Receiving Operator">37</role_type>
+        <parameters>
+            <parameter>
+                <type>ServiceUnit</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Erwerbungsabteilung">AcqDeptKHB</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Repository Manager">29</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Fulfillment Services Operator">38</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Selector">46</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="SDK Write">222</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="General System Administrator">26</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Catalog Administrator">205</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Trial Participant">218</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Resource Sharing Partners Manager">239</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Fulfillment Services Operator">38</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Fulfillment Services Manager">215</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Cataloger">204</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Invoice Manager">44</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Philosophie">KPHIL</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Philosophie">KPHIL</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Known issues operator">301</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Cataloger Extended">227</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Vendor Manager">33</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Physical Inventory Operator Extended">225</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Resource Sharing Library">RES_SHARE</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Resource Sharing Library">RES_SHARE</scope>
+                <value desc="Resource Sharing Desk">RES_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Collection Inventory Operator Extended">229</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Patron">200</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="API Resource Management Read">235</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Soziologie">KSOZ</scope>
+        <role_type desc="Circulation Desk Manager">221</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Soziologie">KSOZ</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Soziologie">KSOZ</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+</user_roles>
