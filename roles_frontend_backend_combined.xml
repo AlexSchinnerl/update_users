@@ -220,25 +220,117 @@
     </user_role>
     <user_role>
         <status desc="Active">ACTIVE</status>
-        <scope desc="FB Hochschulfonds">KHF</scope>
-        <role_type desc="Circulation Desk Operator">32</role_type>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Electronic Inventory Operator">209</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Electronic Inventory Operator Extended">224</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="CDI Inventory Operator">208</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Receiving Operator">37</role_type>
         <parameters>
             <parameter>
-                <type>CirculationDesk</type>
-                <scope desc="FB Hochschulfonds">KHF</scope>
-                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
-            </parameter>
-            <parameter>
-                <type>CantEditRestrictedUsers</type>
-                <scope desc="FB Hochschulfonds">KHF</scope>
-                <value>false</value>
+                <type>ServiceUnit</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Erwerbungsabteilung">AcqDeptKHB</value>
             </parameter>
         </parameters>
     </user_role>
-        <user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Purchasing Operator Extended">47</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Purchasing Operator">54</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
         <status desc="Active">ACTIVE</status>
         <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
         <role_type desc="Patron">200</role_type>
         <parameters/>
     </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Fund-Ledger Viewer">245</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Cataloger Extended">227</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Physical Inventory Operator">210</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Cataloger">204</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Main Library">KHB</scope>
+        <role_type desc="Requests Operator">51</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Invoice Operator">43</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Main Library">KHB</scope>
+        <role_type desc="Work Order Operator">214</role_type>
+        <parameters>
+            <parameter>
+                <type>ServiceUnit</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK-EB</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Physical Inventory Operator Extended">225</role_type>
+        <parameters/>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Invoice Operator Extended">48</role_type>
+        <parameters/>
+    </user_role>
+
 </user_roles>

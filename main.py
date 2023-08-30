@@ -2,11 +2,17 @@ import keyring
 import requests
 import xml.etree.ElementTree as ET
 import re
+import sys
+from datetime import datetime
 from modifier import modify_roles
 
+work_in_production = True
+
 def getAPIkey(akNR):
-    # key = keyring.get_password("alma_api", "alx_prod").rstrip()
-    key = keyring.get_password("alma_api", "alx_sand").rstrip()
+    if work_in_production:
+        key = keyring.get_password("alma_api", "alx_prod").rstrip()
+    else:
+        key = keyring.get_password("alma_api", "alx_sand").rstrip()
     base = "https://api-eu.hosted.exlibrisgroup.com"
     # url = f"{base}/almaws/v1/users/{akNR}?user_id_type=all_unique&view=full&expand=none&apikey={key}"
     url = f"{base}/almaws/v1/users/{akNR}?user_id_type=all_unique&send_pin_number_letter=false&recalculate_roles=false&registration_rules=false&apikey={key}"
@@ -19,7 +25,9 @@ def loader(akNR, url):
     root = ET.fromstring(response.content)
 
     # save response for checking
-    with open(f"saveFiles/response_{akNR}.xml", "w", encoding="UTF-8") as f:
+    now = datetime.now()
+    now_formated = now.strftime("%Y-%m-%d_%H-%M-%S")
+    with open(f"saveFiles/{akNR}_Role_Profile_{now_formated}.xml", "w", encoding="UTF-8") as f:
         f.write(response.text)
     
     print("loaded")
@@ -52,6 +60,7 @@ def updater(akNR, root, key):
 
 
 def main():
+
     with open("input_akNumbers.txt", "r") as i:
         usersInput = i.read()
         akNumbers = re.findall("AK\d{6}", usersInput)
@@ -71,6 +80,15 @@ def main():
         counter += 1
         print(f"{counter} user(s) updated")
         print("---------------------------")
+
+if work_in_production:
+    proceed = input("Cave! Working in Production! - Proceed? (y/N)")
+    if proceed.lower() == "y":
+        pass
+    else:
+        sys.exit()
+        
+
 
 if __name__ == "__main__":
     main()
