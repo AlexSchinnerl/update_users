@@ -1,7 +1,7 @@
-outputFiles/*
-saveFiles/*
+outputFiles/*.xml
+saveFiles/*.xml
 
-input_akNumbers*
+input_akNumbers.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
