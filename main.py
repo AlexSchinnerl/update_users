@@ -6,7 +6,7 @@ import sys
 from datetime import datetime
 from modifier import modify_roles
 
-work_in_production = True
+work_in_production = False
 
 def getAPIkey(akNR):
     if work_in_production:
