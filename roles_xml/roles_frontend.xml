@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user_roles>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Mathematik">KMATH</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mathematik">KMATH</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Mathematik">KMATH</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Geschichte">KGES</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Geschichte">KGES</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Geschichte">KGES</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Philosophie">KPHIL</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Philosophie">KPHIL</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Philosophie">KPHIL</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+                <value desc="Default Circulation Desk">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Gesellschaftspolitik">KGEPO</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Pädagogik und Psychologie">KPSY</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Soziologie">KSOZ</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Soziologie">KSOZ</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Library Juridicum">KREWI</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Library Juridicum">KREWI</scope>
+                <value desc="Infoschalter">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Main Library">KHB</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="Main Library">KHB</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Medizin">KMED</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Medizin">KMED</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Chemie und Chemische Technologie">KCHEM</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Mechatronik">KMECH</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Mechatronik">KMECH</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Informatik">KINFO</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Informatik">KINFO</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value desc="Leihstelle FH">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB BWL, WIN und Fachsprachen">KBWL</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Physik">KPHYS</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Physik">KPHYS</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Physik">KPHYS</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="FB Hochschulfonds">KHF</scope>
+        <role_type desc="Circulation Desk Operator">32</role_type>
+        <parameters>
+            <parameter>
+                <type>CirculationDesk</type>
+                <scope desc="FB Hochschulfonds">KHF</scope>
+                <value desc="Leihstelle">DEFAULT_CIRC_DESK</value>
+            </parameter>
+            <parameter>
+                <type>CantEditRestrictedUsers</type>
+                <scope desc="FB Hochschulfonds">KHF</scope>
+                <value>false</value>
+            </parameter>
+        </parameters>
+    </user_role>
+        <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Patron">200</role_type>
+        <parameters/>
+    </user_role>
+</user_roles>

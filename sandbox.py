@@ -1,37 +1,19 @@
-# import re
-# with open("input_rolesProfiles.txt", "r") as i:
-#     # lines = i.readlines()
-#     inputfile = i.read()
-#     lines = re.findall("roles_\w*", inputfile)
-# print(lines)
+import tkinter as tk
+from pathlib import Path
 
-# import matplotlib.pyplot as plt
+root = tk.Tk()    
 
-# fig, ax = plt.subplots()
-# for i in range(5):
-#     myCircle = plt.Circle((0.5, 0.5), i/10, fill=False)
-#     ax.add_artist(myCircle)
-# plt.title( 'Circle' )
-# plt.show()
+path = Path("roles_xml")
+roles_list = [file.stem for file in path.rglob("*.xml")]
+
+selected_roles = []
+for role in roles_list:
+    check = tk.Checkbutton(root, text=f"{role}", variable=role, command=lambda x=role:selected_roles.append(x))
+    check.pack(anchor="w")
+
+tk.Button(root,text="Ok",command=lambda: [print(selected_roles),root.destroy()]).pack()
+
+root.mainloop()
 
 
-# from datetime import datetime
-# # current dateTime
-# now = datetime.now()
 
-# # convert to string
-# date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
-# print('DateTime String:', date_time_str)
-
-import sys
-
-testing = True
-
-if testing:
-    x = input("y/N")
-    if x=="y":
-        pass
-    else:
-        sys.exit()
-
-print("normal stuff")

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user_roles>
+    <user_role>
+        <status desc="Active">ACTIVE</status>
+        <scope desc="Johannes Kepler Universität Linz">43ACC_UBL</scope>
+        <role_type desc="Patron">200</role_type>
+        <parameters/>
+    </user_role>
+</user_roles>
