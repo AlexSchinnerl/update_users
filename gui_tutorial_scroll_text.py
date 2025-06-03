@@ -2,6 +2,8 @@ import tkinter as tk
 import ttkbootstrap as tb
 from ttkbootstrap.scrolled import ScrolledText
 
+import re
+
 STANDARD_FONT = ("Arial", 18)
 
 root = tk.Tk()
@@ -17,7 +19,11 @@ my_text.pack(pady=15)
 
 
 def get_text():
-    my_label.config(text=my_text.get("start", tk.END))
+    work_text = my_text.get(1.0, tk.END)
+    akNumbers = re.findall("AK\d{6}", work_text)
+    print(akNumbers)
+    for akNumber in akNumbers:
+        print(f"AKNR: {akNumber}")
 
 get_text_button = tk.Button(root, text="Get Text", command=get_text)
 get_text_button.pack()

@@ -61,13 +61,17 @@ def updater(akNR, root, key):
 
 def main():
 
-    with open("input_akNumbers.txt", "r") as i:
-        usersInput = i.read()
+    # change these two to accept input from gui
+    with open("input_akNumbers.txt", "r") as u_i:
+        usersInput = u_i.read()
         akNumbers = re.findall("AK\d{6}", usersInput)
     
-    with open("input_rolesProfiles.txt", "r") as i:
-        rolesInput = i.read()
+    with open("input_rolesProfiles.txt", "r") as r_i:
+        rolesInput = r_i.read()
         roles_list = re.findall("roles_\w*", rolesInput)
+
+    # --------------------------------------------------
+    # akNumbers = 
 
     counter = 0
     for akNR in akNumbers:
@@ -81,6 +85,7 @@ def main():
         print(f"{counter} user(s) updated")
         print("---------------------------")
 
+# das in die Gui einbauen
 if work_in_production:
     proceed = input("Cave! Working in Production! - Proceed? (y/N)")
     if proceed.lower() == "y":
