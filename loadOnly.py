@@ -1,5 +1,5 @@
 import re
-from main import getAPIkey, loader
+from main_old import getAPIkey, loader
 
 with open("input_akNumbers.txt", "r") as i:
     usersInput = i.read()

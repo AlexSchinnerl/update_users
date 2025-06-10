@@ -1,14 +1,11 @@
+from gui_classes import Roles_GUI
+
 import keyring
 import requests
 import xml.etree.ElementTree as ET
-import re
-import sys
 from datetime import datetime
-from modifier import modify_roles
 
-work_in_production = False
-
-def getAPIkey(akNR):
+def getAPIkey(akNR, work_in_production):
     if work_in_production:
         key = keyring.get_password("alma_api", "alx_prod").rstrip()
     else:
@@ -18,7 +15,6 @@ def getAPIkey(akNR):
     url = f"{base}/almaws/v1/users/{akNR}?user_id_type=all_unique&send_pin_number_letter=false&recalculate_roles=false&registration_rules=false&apikey={key}"
 
     return url, key
-
 
 def loader(akNR, url):
     response = requests.get(url)
@@ -34,66 +30,28 @@ def loader(akNR, url):
     
     return root
 
-def updater(akNR, root, key):
-    headers = {
-        "accept": "application/json",
-        "Content-Type": "application/xml",
-    }
-
-    params = {
-        "user_id_type": "all_unique",
-        "send_pin_number_letter": "false",
-        "recalculate_roles": "false",
-        "registration_rules": "false",
-        "apikey": {key}
-    }
-
-    data = ET.tostring(root)
-    requests.put(
-        f"https://api-eu.hosted.exlibrisgroup.com/almaws/v1/users/{akNR}",
-        params=params,
-        headers=headers,
-        data=data,
-    )
-
-    print(f"user {akNR} updated")
-
-
 def main():
+    roles = Roles_GUI()
+    roles.mainloop()
+    # after window terminated get inputs out of class instance
+    akNumbers = roles.input_form.akNumbers
+    roles_list = roles.input_form.roles_list
+    work_in_production = roles.work_in_production.get()
 
-    # change these two to accept input from gui
-    with open("input_akNumbers.txt", "r") as u_i:
-        usersInput = u_i.read()
-        akNumbers = re.findall("AK\d{6}", usersInput)
-    
-    with open("input_rolesProfiles.txt", "r") as r_i:
-        rolesInput = r_i.read()
-        roles_list = re.findall("roles_\w*", rolesInput)
-
-    # --------------------------------------------------
-    # akNumbers = 
-
+    # start "old" main
     counter = 0
     for akNR in akNumbers:
-        url, key = getAPIkey(akNR)
+        url, key = getAPIkey(akNR, work_in_production)
         base_root = loader(akNR, url)
-        modified_root = modify_roles(akNR, base_root, roles_list)
-
-        updater(akNR, modified_root, key)
+        # modified_root = modify_roles(akNR, base_root, roles_list)
+        # updater(akNR, modified_root, key)
         
         counter += 1
         print(f"{counter} user(s) updated")
         print("---------------------------")
 
-# das in die Gui einbauen
-if work_in_production:
-    proceed = input("Cave! Working in Production! - Proceed? (y/N)")
-    if proceed.lower() == "y":
-        pass
-    else:
-        sys.exit()
-        
 
 
 if __name__ == "__main__":
     main()
+
