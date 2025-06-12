@@ -1,13 +1,13 @@
 import xml.etree.ElementTree as ET
 
 def appendRoles(filename, root):
-    roles2append = ET.parse(f"{filename}.xml")
+    roles2append = ET.parse(f"roles_xml/{filename}.xml")
     roles2append = roles2append.getroot()
     for child in roles2append:
         root.append(child)
 
 def build_role_profile(profiles_list):
-    base_roles = ET.parse(f"{profiles_list[0]}.xml")
+    base_roles = ET.parse(f"roles_xml/{profiles_list[0]}.xml")
     base_root = base_roles.getroot()
 
     for profile in profiles_list[1:]:

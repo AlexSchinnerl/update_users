@@ -29,11 +29,12 @@ class Roles_GUI(tk.Tk):
         self.geometry("1250x750")
         # self.attributes("-fullscreen", True)
 
+        # self.style = tb.Style(theme="superhero")
         self.style = tb.Style(theme="darkly")
 
         # Checkbox if work in production
         self.work_in_production = tk.BooleanVar()
-        self.production_checker = tk.Checkbutton(self, text="Work in Production", variable=self.work_in_production, font=STANDARD_FONT)
+        self.production_checker = tk.Checkbutton(self, text="Änderungen im Produktivsystem?", variable=self.work_in_production, font=STANDARD_FONT)
         self.production_checker.pack(pady=20)
 
         # Create a frame outside of function
@@ -58,9 +59,16 @@ class Roles_GUI(tk.Tk):
         self.process_input()
 
         # Zusammenfassung was durchgeführt wird.
+        message_string = str(
+            f"Folgende Änderungen werden durchgeführt:\n"+
+            f"Rollen: {self.roles_list}\n"+
+            f"Angewendet auf {self.akNumbers}\n"+
+            f"Änderungen werden durchgeführt in: {'Produktivsystem' if self.work_in_production else 'Sandbox'}"
+        )
         if Messagebox.okcancel(
             title="Zusammenfassung",
-            message=f"Folgende Änderungen werden durchgeführt:\nRollen: {self.roles_list}\n angewendet auf {self.akNumbers}"
+            message=message_string
+            # message=f"Folgende Änderungen werden durchgeführt:\nRollen: {self.roles_list}\n angewendet auf {self.akNumbers}"
             ) == "OK":
 
             if self.work_in_production.get():
