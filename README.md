@@ -24,4 +24,3 @@ There are two input files:
 * The input_akNumbers.txt stores the user_id(s) you want to modify
 * The input_roles
 
-
