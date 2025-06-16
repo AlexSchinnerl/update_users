@@ -1,8 +1,9 @@
 import tkinter as tk
 from ttkbootstrap.dialogs import Messagebox
 
+# from .info_window import Info_Window
+
 import re
-# from .gui_const import my_function
 
 # https://stackoverflow.com/questions/73931962/tkinter-button-class-creation
 
@@ -40,11 +41,21 @@ class Apply_Button(tk.Frame):
             if self.parent.work_in_production.get():
                 if Messagebox.okcancel(title="Achtung!", message="Änderungen im Produktivsystem - Bitte nochmal bestätigen!") == "OK":
                     self.apply_button_disable()
+                    # Close window to run Program
+                    # self.parent.destroy() # kills mainloop
+                    # self.parent.quit() # closes Window - mainloop still running
+                    # self.parent.withdraw()
+                    # self.parent.iconify()
                 else:
                     self.clear_input()
             else:
                 self.apply_button_disable()
-                # Run Program
+                # Close window to run Program
+                # self.parent.destroy()  # kills mainloop
+                # self.parent.quit() # closes Window - mainloop still running
+                # self.parent.withdraw()
+                # self.parent.iconify()
+                # Info_Window(1,2,3)
         else:
             self.clear_input()       
 

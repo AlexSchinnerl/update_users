@@ -1,4 +1,4 @@
-from gui import Roles_GUI
+from gui import Roles_GUI, Info_Window
 from utils import getAPIkey, load_roles, modify_roles, update_roles
 
 def main():
@@ -8,6 +8,11 @@ def main():
     akNumbers = roles.akNumbers
     roles_list = roles.roles_list
     work_in_production = roles.work_in_production.get()
+
+    # print(work_in_production, roles_list, akNumbers)
+
+    # start info Window
+
 
     # start "old" main
     counter = 0
