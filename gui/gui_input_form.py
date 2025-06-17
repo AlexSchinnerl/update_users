@@ -1,6 +1,6 @@
 import tkinter as tk
 from ttkbootstrap.scrolled import ScrolledText
-from .gui_const import STANDARD_FONT, TITLE_FONT
+from .gui_utils import STANDARD_FONT, TITLE_FONT
 
 class Input_Form(tk.Frame):
     def __init__(self, parent): # parent wird die Roles_GUI Klasse werden. Die GUI Klasse wird parent von Frame.

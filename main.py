@@ -1,4 +1,4 @@
-from gui import Roles_GUI, Info_Window
+from gui import Roles_GUI
 from utils import getAPIkey, load_roles, modify_roles, update_roles
 
 import os

@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 
+from gui.gui_utils import update_textbox
+
 def appendRoles(filename, root):
     roles2append = ET.parse(f"roles_xml/{filename}.xml")
     roles2append = roles2append.getroot()
@@ -15,21 +17,22 @@ def build_role_profile(profiles_list):
     
     return base_root
 
-def modify_roles(akNR, root, roles_list):
+def modify_roles(akNR, root, roles_list, infoscreen):
     # delete all roles
     roles = root.find("user_roles")
     root.remove(roles)
 
-    print("roles removed")
+    update_textbox(infoscreen, f"Old Roles removed\n")
 
     role_profile = build_role_profile(roles_list)
     root.append(role_profile)
 
-    print("user Roles applied")
+    update_textbox(infoscreen, f"New Role Profile built\n")
 
     tree = ET.ElementTree(root)
-    tree.write(f"outputFiles/output_{akNR}.xml")
+    output_file = f"outputFiles/output_{akNR}.xml"
+    tree.write(output_file)
 
-    print("output written")
+    update_textbox(infoscreen, f"New Role Profile saved under: {output_file}\nReady to update user...\n")
 
     return root

@@ -4,7 +4,7 @@ from ttkbootstrap.scrolled import ScrolledText
 
 from utils import getAPIkey, load_roles, modify_roles, update_roles
 
-from .gui_const import INFOSCREEN_WINDOW_SIZE
+from .gui_utils import INFOSCREEN_WINDOW_SIZE
 
 class Info_Window(tk.Toplevel):
     # Progress Bar

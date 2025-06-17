@@ -5,7 +5,7 @@ from pathlib import Path
 
 from .gui_input_form import Input_Form
 from .gui_apply_button import Apply_Button
-from .gui_const import STANDARD_FONT, WINDOW_SIZE
+from .gui_utils import STANDARD_FONT, WINDOW_SIZE
 # from .info_window import Info_Window
 
 # https://www.youtube.com/watch?v=X5yyKZpZ4vU

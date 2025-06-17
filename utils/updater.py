@@ -1,7 +1,9 @@
 import requests
 import xml.etree.ElementTree as ET
 
-def update_roles(akNR, root, key):
+from gui.gui_utils import update_textbox
+
+def update_roles(akNR, root, key, infoscreen):
     headers = {
         "accept": "application/json",
         "Content-Type": "application/xml",
@@ -23,4 +25,4 @@ def update_roles(akNR, root, key):
         data=data,
     )
 
-    print(f"user {akNR} updated")
+    update_textbox(infoscreen, f"user {akNR} updated")
