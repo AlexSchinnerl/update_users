@@ -74,7 +74,8 @@ class Roles_GUI(tk.Tk):
                                          )
         self.percent_bar.pack(pady=20)
 
-        self.infotext = ScrolledText(self, height=20, width=110, wrap=tk.WORD)
+        self.infotext = tk.Text(self, height=20, width=110, wrap=tk.WORD)
+        self.infotext.config( background="black", foreground="green")
         self.infotext.pack(pady=15)
 
         # ---------------------------------------------------------------------
