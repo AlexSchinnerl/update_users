@@ -1,5 +1,6 @@
 import tkinter as tk
 import ttkbootstrap as tb
+from ttkbootstrap.scrolled import ScrolledText
 from pathlib import Path
 
 from .gui_input_form import Input_Form
@@ -67,6 +68,14 @@ class Roles_GUI(tk.Tk):
 
         # Apply Button
         self.apply_button = Apply_Button(self)
+
+        self.percent_bar = tb.Floodgauge(self, bootstyle="success", font=STANDARD_FONT, mask="Progress: {}",
+                                         maximum=100, orient="horizontal", mode="determinate", value=0 # Start Value
+                                         )
+        self.percent_bar.pack(pady=20)
+
+        self.infotext = ScrolledText(self, height=20, width=110, wrap=tk.WORD)
+        self.infotext.pack(pady=15)
 
         # ---------------------------------------------------------------------
     

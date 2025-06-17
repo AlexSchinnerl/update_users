@@ -1,6 +1,10 @@
 import tkinter as tk
 from ttkbootstrap.dialogs import Messagebox
 
+from .info_window import Info_Window
+
+from test import run_program
+
 # from .info_window import Info_Window
 
 import re
@@ -22,6 +26,7 @@ class Apply_Button(tk.Frame):
         self.parent = parent
     
     def apply_function(self):
+        # print(type(self.parent))
 
         self.process_input()
 
@@ -41,6 +46,7 @@ class Apply_Button(tk.Frame):
             if self.parent.work_in_production.get():
                 if Messagebox.okcancel(title="Achtung!", message="Änderungen im Produktivsystem - Bitte nochmal bestätigen!") == "OK":
                     self.apply_button_disable()
+                    run_program(self.parent, self.parent.akNumbers, self.parent.roles_list, self.parent.work_in_production.get())
                     # Close window to run Program
                     # self.parent.destroy() # kills mainloop
                     # self.parent.quit() # closes Window - mainloop still running
@@ -50,6 +56,9 @@ class Apply_Button(tk.Frame):
                     self.clear_input()
             else:
                 self.apply_button_disable()
+                # info_screen = Info_Window(self.parent.akNumbers, self.parent.roles_list, self.parent.work_in_production.get())
+                run_program(self.parent, self.parent.akNumbers, self.parent.roles_list, self.parent.work_in_production.get())
+
                 # Close window to run Program
                 # self.parent.destroy()  # kills mainloop
                 # self.parent.quit() # closes Window - mainloop still running
@@ -62,7 +71,7 @@ class Apply_Button(tk.Frame):
     def apply_button_disable(self):
         # disable Button
         self.apply_button.config(state = tk.DISABLED) # um sicherzustellen, dass der Button nur einmal gedrückt wird.
-        # self.apply_infotext.config(text="Änderungen werden durchgeführt...")
+        self.apply_infotext.config(text="Änderungen werden durchgeführt...")
     
     def process_input(self):
         # Process input (AKNrs and Roles List)

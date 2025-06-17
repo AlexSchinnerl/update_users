@@ -1,5 +1,8 @@
 import tkinter as tk
 import ttkbootstrap as tb
+from ttkbootstrap.scrolled import ScrolledText
+
+from utils import getAPIkey, load_roles, modify_roles, update_roles
 
 from .gui_const import INFOSCREEN_WINDOW_SIZE
 
@@ -14,7 +17,7 @@ class Info_Window(tk.Toplevel):
         # user AK122837 updated
         # 1 user(s) updated
         # ---------------------------
-    def __init__(self, work_in_production, roles_list, akNumbers):
+    def __init__(self, akNumbers, roles_list, work_in_production):
         super().__init__()
         
 
@@ -39,6 +42,13 @@ class Info_Window(tk.Toplevel):
                          value=0 # Start Value
                          )
         self.percent_bar.pack(pady=20)
+
+        self.infotext = ScrolledText(self, height=20, width=110, wrap=tk.WORD)
+        self.infotext.pack(pady=15)
+
+
+
+
 
 
 
