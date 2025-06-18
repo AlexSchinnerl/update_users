@@ -5,8 +5,8 @@ from pathlib import Path
 
 from .gui_input_form import Input_Form
 from .gui_apply_button import Apply_Button
+from .gui_infoscreen import InfoScreen
 from .gui_utils import STANDARD_FONT, WINDOW_SIZE
-# from .info_window import Info_Window
 
 # https://www.youtube.com/watch?v=X5yyKZpZ4vU
 # https://www.youtube.com/watch?v=aAk3ORDr63U
@@ -37,11 +37,10 @@ class Roles_GUI(tk.Tk):
         # self.iconbitmap()
         self.geometry(WINDOW_SIZE)
         # self.attributes("-fullscreen", True)
-        # self.style = tb.Style(theme="superhero")
-        self.style = tb.Style(theme="darkly")
+        self.style = tb.Style(theme="superhero")
+        # self.style = tb.Style(theme="darkly")
         
         # ---------------------------------------------------------------------
-
         # Variables ---------------------------------------------------------------------
         
         # Load xml files in List for display
@@ -69,14 +68,19 @@ class Roles_GUI(tk.Tk):
         # Apply Button
         self.apply_button = Apply_Button(self)
 
-        self.percent_bar = tb.Floodgauge(self, bootstyle="success", font=STANDARD_FONT, mask="Progress: {}",
-                                         maximum=100, orient="horizontal", mode="determinate", value=0 # Start Value
-                                         )
-        self.percent_bar.pack(pady=20)
+        # Infoscreen
+        self.infoscreen = InfoScreen(self)
 
-        self.infotext = tk.Text(self, height=20, width=110, wrap=tk.WORD)
-        self.infotext.config( background="black", foreground="green")
-        self.infotext.pack(pady=15)
+
+
+        # self.percent_bar = tb.Floodgauge(self, bootstyle="success", font=STANDARD_FONT, mask="Progress: {}",
+        #                                  maximum=100, orient="horizontal", mode="determinate", value=0 # Start Value
+        #                                  )
+        # self.percent_bar.pack(pady=20)
+
+        # self.infotext = tk.Text(self, height=20, width=110, wrap=tk.WORD)
+        # self.infotext.config(background="black", foreground="green")
+        # self.infotext.pack(pady=15)
 
         # ---------------------------------------------------------------------
     
