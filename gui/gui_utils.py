@@ -5,7 +5,7 @@ STANDARD_FONT = ("Arial", 14)
 TITLE_FONT = ("Arial", 18)
 
 WINDOW_SIZE = ("900x500")
-INFOSCREEN_WINDOW_SIZE = ("500x500")
+INFOSCREEN_WINDOW_SIZE = ("500x400")
 
 def update_textbox(infoscreen, text_2_insert):
     infoscreen.infotext.insert(tk.INSERT, text_2_insert)

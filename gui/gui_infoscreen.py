@@ -23,3 +23,10 @@ class InfoScreen(tk.Toplevel):
                                          value=0, # Start Value,
                                          )
         self.percent_bar.grid(row=1, column=0, sticky="nesw")
+    
+    def finish_user_update(self, counter, max_users):
+        self.percent_bar.mask = f"User verarbeitet: {counter}/{max_users}"
+        self.percent_bar.step(1)
+        self.infotext.insert(tk.INSERT, f"{counter} user(s) processed\n")
+        self.infotext.insert(tk.INSERT, "---------------------------\n")
+        self.update()

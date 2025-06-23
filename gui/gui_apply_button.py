@@ -1,8 +1,8 @@
 import re
 import tkinter as tk
 
-from .gui_utils import confirmation_message
-from test import run_program
+from .gui_utils import confirmation_message, STANDARD_FONT
+from utils.program_starter import run_program
 
 # https://stackoverflow.com/questions/73931962/tkinter-button-class-creation
 
@@ -12,14 +12,17 @@ class Apply_Button(tk.Frame):
 
         self.pack(pady=20)
 
-        self.apply_button = tk.Button(self,text="Apply Role Changes",command=self.apply_function)
-        self.apply_infotext = tk.Label(self, text="test")
-        
-        self.apply_button.grid(row=0, column=0)
-        self.apply_infotext.grid(row=0, column=1, padx=20)
-
         self.parent = parent
         self.input_form = input_form
+
+        self.production_checker = tk.Checkbutton(self, text="Änderungen im Produktivsystem?", variable=self.parent.work_in_production, font=STANDARD_FONT)
+        self.production_checker.grid(row=0, column=0, columnspan=2)
+
+        self.apply_button = tk.Button(self,text="Apply Role Changes",command=self.apply_function, font=STANDARD_FONT)
+        self.apply_button.grid(row=1, column=0, pady=20)
+        
+        self.apply_infotext = tk.Label(self, text="")
+        self.apply_infotext.grid(row=1, column=1, padx=20, pady=20)
     
     def apply_function(self):
         # Process input (AKNrs and Roles List)

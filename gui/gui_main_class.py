@@ -1,12 +1,7 @@
 import tkinter as tk
 import ttkbootstrap as tb
-from ttkbootstrap.scrolled import ScrolledText
 from pathlib import Path
-
-from .gui_input_form import Input_Form
-from .gui_apply_button import Apply_Button
-from .gui_infoscreen import InfoScreen
-from .gui_utils import STANDARD_FONT, WINDOW_SIZE
+from .gui_utils import WINDOW_SIZE
 
 # https://www.youtube.com/watch?v=X5yyKZpZ4vU
 # https://www.youtube.com/watch?v=aAk3ORDr63U
@@ -53,34 +48,3 @@ class MainWindow(tk.Tk):
         # AK Nums and roles list to fill later
         self.akNumbers = []
         self.roles_list = []
-
-        # ---------------------------------------------------------------------
-
-        # GUI Puzzle Pieces ---------------------------------------------------------------------
-        
-        # # Input Frame (Form)
-        # self.input_form = Input_Form(self)
-
-        # # Checkbox if work in production
-        self.production_checker = tk.Checkbutton(self, text="Änderungen im Produktivsystem?", variable=self.work_in_production, font=STANDARD_FONT)
-        self.production_checker.pack(pady=20)
-
-        # # Apply Button
-        # self.apply_button = Apply_Button(self)
-
-        # # Infoscreen
-        # self.infoscreen = InfoScreen(self)
-
-
-
-        # self.percent_bar = tb.Floodgauge(self, bootstyle="success", font=STANDARD_FONT, mask="Progress: {}",
-        #                                  maximum=100, orient="horizontal", mode="determinate", value=0 # Start Value
-        #                                  )
-        # self.percent_bar.pack(pady=20)
-
-        # self.infotext = tk.Text(self, height=20, width=110, wrap=tk.WORD)
-        # self.infotext.config(background="black", foreground="green")
-        # self.infotext.pack(pady=15)
-
-        # ---------------------------------------------------------------------
-    
