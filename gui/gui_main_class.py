@@ -24,7 +24,7 @@ from .gui_utils import STANDARD_FONT, WINDOW_SIZE
     # -------------------------------------------------------------
 
 
-class Roles_GUI(tk.Tk):
+class MainWindow(tk.Tk):
     def __init__(self):
         super().__init__() # super().__init__() run constructor of tk.Tk (gleich wie root=tkTk()) D.h. die Klasse gibt uns schon eine Instanz von Tk
         # Das erlaubt uns z.b. self.title zu schreiben anstatt zuerst root = tk.TK().
@@ -58,18 +58,18 @@ class Roles_GUI(tk.Tk):
 
         # GUI Puzzle Pieces ---------------------------------------------------------------------
         
-        # Input Frame (Form)
-        self.input_form = Input_Form(self)
+        # # Input Frame (Form)
+        # self.input_form = Input_Form(self)
 
-        # Checkbox if work in production
+        # # Checkbox if work in production
         self.production_checker = tk.Checkbutton(self, text="Änderungen im Produktivsystem?", variable=self.work_in_production, font=STANDARD_FONT)
         self.production_checker.pack(pady=20)
 
-        # Apply Button
-        self.apply_button = Apply_Button(self)
+        # # Apply Button
+        # self.apply_button = Apply_Button(self)
 
-        # Infoscreen
-        self.infoscreen = InfoScreen(self)
+        # # Infoscreen
+        # self.infoscreen = InfoScreen(self)
 
 
 
