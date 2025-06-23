@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-
 from gui.gui_utils import update_textbox
 
 def appendRoles(filename, root):

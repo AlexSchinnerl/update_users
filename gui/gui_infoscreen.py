@@ -1,6 +1,5 @@
 import tkinter as tk
 import ttkbootstrap as tb
-
 from .gui_utils import STANDARD_FONT, INFOSCREEN_WINDOW_SIZE
 
 class InfoScreen(tk.Toplevel):

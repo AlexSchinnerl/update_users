@@ -1,4 +1,3 @@
-
 from utils import getAPIkey, load_roles, modify_roles, update_roles
 from gui.gui_utils import update_textbox
 from gui.gui_infoscreen import InfoScreen
@@ -21,12 +20,3 @@ def run_program(parent):
 
         counter +=1
         info_screen.finish_user_update(counter, max_users)
-
-
-# def finish_user_update(infoscreen, counter, max_users):
-#     infoscreen.percent_bar.mask = f"User verarbeitet: {counter}/{max_users}"
-#     infoscreen.percent_bar.step(1)
-#     infoscreen.infotext.insert(tk.INSERT, f"{counter} user(s) processed\n")
-#     infoscreen.infotext.insert(tk.INSERT, "---------------------------\n")
-#     infoscreen.update()
-     

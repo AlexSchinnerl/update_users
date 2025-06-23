@@ -1,6 +1,5 @@
 import requests
 import xml.etree.ElementTree as ET
-
 from gui.gui_utils import update_textbox
 
 def update_roles(akNR, root, key, infoscreen):
@@ -25,4 +24,5 @@ def update_roles(akNR, root, key, infoscreen):
         data=data,
     )
 
-    update_textbox(infoscreen, f"user {akNR} updated")
+
+    update_textbox(infoscreen, f"user {akNR} updated\n")

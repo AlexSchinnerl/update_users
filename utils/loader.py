@@ -1,7 +1,6 @@
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
-
 from gui.gui_utils import update_textbox
 
 
@@ -19,12 +18,3 @@ def load_roles(akNR, url, infoscreen):
     update_textbox(infoscreen, f"Loaded Profile\nSaved under: {filepath}\n")
     
     return root
-
-
-# with open("input_akNumbers.txt", "r") as i:
-#     usersInput = i.read()
-#     akNumbers = re.findall("AK\d{6}", usersInput)
-
-# for akNR in akNumbers:
-#     url, key = getAPIkey(akNR)
-#     loader(akNR, url)
