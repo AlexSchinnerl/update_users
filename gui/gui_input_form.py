@@ -22,10 +22,10 @@ class Input_Form(tk.Frame):
             var = tk.BooleanVar()
             self.checkbuttons_var.append(var) # creates a list of true/False variables for checkbuttons
             self.check = tk.Checkbutton(self, text=f"{role}", variable=var, font=STANDARD_FONT)
-            self.check.grid(row=rowcount, column=1, padx=20)
+            self.check.grid(row=rowcount, column=1, padx=20, sticky="nesw")
             rowcount+=1
 
         # Users Input
         # Has to be after Checkboxes tu use rowcount of checkboxes for rowspan
-        self.users_text = tk.Text(self, height=10, width=100, wrap=tk.WORD)
-        self.users_text.grid(row=1, column=0, rowspan=rowcount, padx=20, pady=20)
+        self.users_text = tk.Text(self, height=10, wrap=tk.WORD)
+        self.users_text.grid(row=1, column=0, rowspan=rowcount, padx=20, pady=20, sticky="nesw")

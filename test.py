@@ -33,8 +33,8 @@ from gui.gui_infoscreen import InfoScreen
 
 def run_program(parent):
     counter = 0
-    info_screen = InfoScreen(parent)
     max_users = len(parent.akNumbers)
+    info_screen = InfoScreen(parent, max_users)
     
     # infoscreen.infoscreen.percent_bar.maximum = len(infoscreen.akNumbers)
     for akNR in parent.akNumbers:
@@ -52,7 +52,7 @@ def run_program(parent):
 
 
 def finish_user_update(infoscreen, counter, max_users):
-    infoscreen.percent_bar.mask = f"{counter}/{max_users}"
+    infoscreen.percent_bar.mask = f"User verarbeitet: {counter}/{max_users}"
     infoscreen.percent_bar.step(1)
     infoscreen.infotext.insert(tk.INSERT, f"{counter} user(s) processed\n")
     infoscreen.infotext.insert(tk.INSERT, "---------------------------\n")
